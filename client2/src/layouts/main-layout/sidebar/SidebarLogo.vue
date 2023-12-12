@@ -3,10 +3,10 @@
     <router-link to="/dashboard">
       <img v-if="layout === 'dark-sidebar' ||
         (themeMode === 'dark' && layout === 'light-sidebar')
-        " alt="Logo" src="../../../assets/images/logo.png" class="h-25px app-sidebar-logo-default" />
-      <img v-if="themeMode === 'light' && layout === 'light-sidebar'" alt="Logo" src="../../../assets/images/logo.png"
+        " alt="Logo" src="../../../assets/images/krdcl.png" class="h-25px app-sidebar-logo-default" />
+      <img v-if="themeMode === 'light' && layout === 'light-sidebar'" alt="Logo" src="../../../assets/images/krdcl.png"
         class="h-25px app-sidebar-logo-default" />
-      <img alt="Logo" src="../../../assets/images/logo.png" class="h-20px app-sidebar-logo-minimize" />
+      <img alt="Logo" src="../../../assets/images/krdcl.png" class="h-20px app-sidebar-logo-minimize" />
     </router-link>
     <div v-if="sidebarToggleDisplay" ref="toggleRef" id="kt_app_sidebar_toggle"
       class="app-sidebar-toggle btn btn-icon btn-shadow btn-sm btn-color-muted btn-active-color-primary body-bg h-30px w-30px position-absolute top-50 start-100 translate-middle rotate"

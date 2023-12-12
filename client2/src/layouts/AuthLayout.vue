@@ -10,8 +10,8 @@
         <div class="d-flex flex-center w-lg-50 pt-10 pt-lg-0 px-10">
           <div class="text-center">
             <div class="mb-10">
-              <img class="krdcl-logo" alt="KRDCL" src="../assets/images/logo.png" />
-              <h4 class="text-white fw-normal m-0 mt-2">National Highways Authority of India</h4>
+              <img class="krdcl-logo" alt="KRDCL" src="../assets/images/krdcl.png" />
+              <h4 class="text-white fw-normal m-0 mt-2">Karnataka Road Development Corporation Limited</h4>
             </div>
             <h1 class="text-white fw-normal m-4 admin-text">Intelligent Transportation System</h1>
             <h2 class="text-white fw-normal m-0 aadmin-text">Administration System</h2>

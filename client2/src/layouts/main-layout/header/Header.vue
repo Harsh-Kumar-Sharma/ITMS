@@ -9,11 +9,11 @@
       <div v-if="layout === 'light-header' || layout === 'dark-header'"
         class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 me-lg-15">
         <router-link to="/">
-          <img v-if="themeMode === 'light' && layout === 'light-header'" alt="Logo" src="../../../assets/images/logo.png"
+          <img v-if="themeMode === 'light' && layout === 'light-header'" alt="Logo" src="../../../assets/images/krdcl.png"
             class="h-20px h-lg-30px app-sidebar-logo-default theme-light-show" />
           <img v-if="layout === 'dark-header' ||
             (themeMode === 'dark' && layout === 'light-header')
-            " alt="Logo" src="../../../assets/images/logo.png" class="h-20px h-lg-30px app-sidebar-logo-default" />
+            " alt="Logo" src="../../../assets/images/krdcl.png" class="h-20px h-lg-30px app-sidebar-logo-default" />
         </router-link>
       </div>
       <template v-else>
@@ -27,7 +27,7 @@
         <!--begin::Mobile logo-->
         <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
           <router-link to="/" class="d-lg-none">
-            <img alt="Logo" src="../../../assets/images/logo.png" class="h-30px" />
+            <img alt="Logo" src="../../../assets/images/krdcl.png" class="h-30px" />
           </router-link>
         </div>
         <!--end::Mobile logo-->
