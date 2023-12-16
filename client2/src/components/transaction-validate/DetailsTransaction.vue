@@ -500,7 +500,7 @@ export default defineComponent({
       const year = dateObject.getFullYear();
       const month = dateObject.getMonth() + 1;
       const day = dateObject.getDate();
-      return `http://103.158.148.19:3002/${year}/${month}/${day}/${transactionDetails.value.LANE_TRANS_ID}_F.jpg`;
+      return `http://125.19.122.235:4001/${year}/${month}/${day}/${transactionDetails.value.LANE_TRANS_ID}_F.jpg`;
     });
 
     watch(imgs, async (newValue, oldValue) => {
