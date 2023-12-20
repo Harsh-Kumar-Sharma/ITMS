@@ -30,6 +30,11 @@
           </router-link>
         </li>
         <li class="nav-item">
+          <router-link to="/toll-files" class="nav-link text-active-primary me-6" active-class="active">
+            Toll Files Status
+          </router-link>
+        </li>
+        <li class="nav-item">
           <router-link to="/transaction-avc-report" class="nav-link text-active-primary me-6" active-class="active">
             Transaction Avc Report
           </router-link>

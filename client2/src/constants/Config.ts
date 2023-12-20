@@ -51,7 +51,9 @@ export const API_ROUTES = {
     AVC_TRANSACTION: "/report/getAvcTransactionCount",
     GET_REVENUE_LANE_WISE: '/report/getRevenueLaneWise',
     GET_COUNT_WITH_REVENUE: '/report/getCountWithRevenue',
-    DELETE_FILE: '/report/deleteFile'
+    DELETE_FILE: '/report/deleteFile',
+    GET_TOLL_FILE_STATUS: '/report/toll-files',
+    GET_MASTER_TOP_DATA: '/report/master-table'
   },
   PAYMENT: {
     PAYMENT_SUBTYPE: "/transaction/getAllPaymentSubType",

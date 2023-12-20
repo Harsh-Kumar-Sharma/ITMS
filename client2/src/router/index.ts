@@ -84,6 +84,16 @@ const routes = [
             },
           },
           {
+            path: "/toll-files",
+            name: "Toll File Status",
+            component: () =>
+              import("@/components/admin-report/tollFiles.vue"),
+            meta: {
+              pageTitle: "Toll-File-Status",
+              subModuleName: "Toll File Status",
+            },
+          },
+          {
             path: "/transaction-avc-report",
             name: "AvcRevenueReport",
             component: () =>
@@ -145,7 +155,45 @@ const routes = [
     ],
   },
 
-
+  {
+    path: "/master",
+    component: () => import("@/layouts/main-layout/MainLayout.vue"),
+    meta: {
+      middleware: "auth",
+      moduleName: "Master Transaction",
+    },
+    children: [
+      {
+        path: "/master",
+        name: "master",
+        component: () => import("@/views/master.vue"),
+        meta: {
+          pageTitle: "master",
+          moduleName: "master",
+        },
+        children: [
+          {
+            path: "/master-table",
+            name: "master-table",
+            component: () => import("@/components/master-status/masterTable.vue"),
+            meta: {
+              pageTitle: "Master table",
+              subModuleName: "master",
+            },
+          },
+          {
+            path: "/file-table",
+            name: "file-table",
+            component: () => import("@/components/master-status/tollFiles.vue"),
+            meta: {
+              pageTitle: "File Table",
+              subModuleName: "master",
+            },
+          },
+        ],
+      }
+    ]
+  },
 
   {
     path: "/transactions",

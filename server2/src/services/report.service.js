@@ -2636,8 +2636,27 @@ where ${condition} 1=1`)
   }
 }
 
+const getTollFiles = async () => {
+  const data = await sequelize.query(`select top(50) FILENAME,
+  FILETYPE,
+  CREATIONTIME,
+  RECORDS,
+  F_STATUS from CCH_FILES_RECORDS order by CREATIONTIME desc`);
+  return data[0]
+}
 
-
+const getMaster = async () => {
+  const data = await sequelize.query(`select top(50) LANE_TRANS_ID,
+  ENTRY_LANE_ID,
+  TAG,
+  ENTRY_PASSAGE_TIME,
+  VEH_PLATE,
+  [VEH].CLASS_DESCRIPTION as ENTRY_AVC_CLASS,
+  API_TRANS_STATUS from TBL_MASTER_TRANS 
+  inner join TBL_MASTER_CLASS AS [VEH] ON TBL_MASTER_TRANS.ENTRY_AVC_CLASS = [VEH].[CLASS_NO]
+  order by ENTRY_PASSAGE_TIME desc`);
+  return data[0]
+}
 
 module.exports = {
   getAllReports,
@@ -2662,5 +2681,8 @@ module.exports = {
   getCountLaneAndDateWise,
   deleteFile,
   reportShiftCollection,
-  reportForShortExcess
+  reportForShortExcess,
+  getTollFiles,
+  getMaster,
+
 };

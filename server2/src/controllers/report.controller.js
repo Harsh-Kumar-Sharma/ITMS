@@ -73,11 +73,32 @@ const deleteFile = catchAsync(async (req, res) => {
     data: allReports,
   });
 });
+
+
+// Generate  Reports
+const getTollFiles = catchAsync(async (req, res, next) => {
+  const data = await reportService.getTollFiles();
+  return res.status(200).json({
+    data: data,
+  });
+});
+
+
+const getMaster = catchAsync(async (req, res, next) => {
+  const data = await reportService.getMaster();
+  return res.status(200).json({
+    data: data,
+  });
+});
+
+
 module.exports = {
   generateReports,
   getAllReports,
   getTransactionCount,
   getRevenueTransaction,
   getAvcTransaction,
-  deleteFile
+  deleteFile,
+  getTollFiles,
+  getMaster
 };

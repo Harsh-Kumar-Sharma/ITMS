@@ -10,4 +10,6 @@ router.post('/getTransactionCount', reportController.getTransactionCount);
 router.post('/getRevenueTransaction', reportController.getRevenueTransaction);
 router.post('/getAvcTransactionCount', reportController.getAvcTransaction);
 router.get('/deleteFile', reportController.deleteFile);
+router.get('/toll-files', reportController.getTollFiles);
+router.get('/master-table', reportController.getMaster);
 module.exports = router;

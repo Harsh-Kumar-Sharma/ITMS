@@ -32,6 +32,11 @@ const MainMenuConfig: Array<MenuItem> = [
         bootstrapIcon: "bi-file-earmark-check-fill",
       },
       {
+        heading: "Current Transaction",
+        route: "/master-table",
+        bootstrapIcon: "bi bi-activity",
+      },
+      {
         heading: "Cashup",
         route: "/cashup-mid-shift",
         bootstrapIcon: "bi-cash",
